@@ -1,90 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>simple crystal game</title>
-
-  <style type="text/css">
-
-    .crystal-image {
-      width: 300px;
-      height: 300px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+   
 
 </head>
 <body>
+    
+    <h1>Crystal Collecter</h1>
+    <!-- instructions: You will be given a random number at the start of the game.
 
-  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-  <!-- 1/17 this is currently a copy of 12.html from crystal example-->
-  <!-- Note that this div is now empty. We will fill it dynamically -->
-  <div id="crystals">
-  </div>
+    There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
 
-  <!-- JAVASCRIPT  -->
-  <!-- ========================================= -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    You win the game by matching your ottal score to the random number, you lose the game if your total score goes above the random number.
 
-  <script type="text/javascript">
+    The value of each crystal is hidden from you until you click on it.
 
-  var targetNumber = 53;
+    Each time when the game starts, the game will change the values of each crystal.
+    
+    1) paste meyerweb Reset 
+    
+    1a) add bootstrap to help with layout and keeping images in a grid
+    
+    2) decide background image, colors, look, and images for 'crystals', 
+    
+    2a) then add images to image dir
+    
+    
+    3) create random number generator  ----I'm currently here as of 1/18
+    3a1) look at buttons
+    3a2) link to style and reset .css pages
+    3a3) make sure eyes don't actually bleed
+    3a) look at jquery calculator, how does the result screen in that measure up to this hw assignment
 
-  $("#number-to-guess").text(targetNumber);
+    4) assign math to the crystals, look at classwork 12 for hints
+    
+    5) make sure to console log throughout so that I can see returns, research more ways to quickly check code, learn to use debugger
+    
+    6) make sure win and loss tally works, this is something I wasn't able to make work on last weeks homework so I'll need to spend way more time on this
+    
+    7) make sure displays are showing correct math.  -->
 
-  var counter = 0;
+    <!-- 8) repo linking, update portfolio page- does it link to it? -->
 
-  // Now for the hard part. Creating multiple crystals each with their own unique number value.
 
-  // We begin by expanding our array to include four options.
-  var numberOptions = [10, 5, 3, 7];
-
-  // Next we create a for loop to create crystals for every numberOption.
-  for (var i = 0; i < numberOptions.length; i++) {
-
-    // For each iteration, we will create an imageCrystal
-    var imageCrystal = $("<img>");
-
-    // First each crystal will be given the class ".crystal-image".
-    // This will allow the CSS to take effect.
-    imageCrystal.addClass("crystal-image");
-
-    // Each imageCrystal will be given a src link to the crystal image
-    imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
-
-    // Each imageCrystal will be given a data attribute called data-crystalValue.
-    // This data attribute will be set equal to the array value.
-    imageCrystal.attr("data-crystalvalue", numberOptions[i]);
-
-    // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
-    $("#crystals").append(imageCrystal);
-  }
-
-  // This time, our click event applies to every single crystal on the page. Not just one.
-  $(".crystal-image").on("click", function() {
-
-    // Determining the crystal's value requires us to extract the value from the data attribute.
-    // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
-    // Using the .attr("data-crystalvalue") allows us to grab the value out of the "data-crystalvalue" attribute.
-    // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
-
-    var crystalValue = ($(this).attr("data-crystalvalue"));
-    crystalValue = parseInt(crystalValue);
-    // We then add the crystalValue to the user's "counter" which is a global variable.
-    // Every click, from every crystal adds to the global counter.
-    counter += crystalValue;
-
-    // All of the same game win-lose logic applies. So the rest remains unchanged.
-    alert("New score: " + counter);
-
-    if (counter === targetNumber) {
-      alert("You win!");
-    }
-
-    else if (counter >= targetNumber) {
-      alert("You lose!!");
-    }
-
-  });
-
-  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
