@@ -1,21 +1,23 @@
 
  
 body {
-    background-image: url('/assets/images/eyes\ will\ bleed\ by\ Ben\ Mulholland-1.png.png');
+    background-image: url("/assets/images/difficulttolookat.png");
   background-repeat: repeat-y;
   background-attachment: fixed;
   
 }
   
-  .container {
-    /* Box-model */
-    width: 1024px;
+ img{
+     border-radius:14px;
+     box-decoration-break: slice;
+     color: whitesmoke;
+
+ }
   
-    /* Positioning */
-    margin: 0 auto;
-    
-  }
-  
+ h1 {
+
+
+ }
 
    
   
