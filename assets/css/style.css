@@ -1,27 +1,32 @@
 
+ 
+body {
+    background-image: url('/assets/images/eyes\ will\ bleed\ by\ Ben\ Mulholland-1.png.png');
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  
+}
+  
   .container {
     /* Box-model */
     width: 1024px;
   
     /* Positioning */
     margin: 0 auto;
+    
   }
   
-  #main-bio,
-  #contact-info,
-  #bio-image {
+
+   
+  
+  #instructions,
+  #results,
+  #score {
     float: left;
   }
   
-  #main-bio {
-    width: 70%;
-  }
   
-  #contact-info {
-    width: 30%;
-  }
-  
-  #bio-image {
+  #images {
     /* Box-model */
     width: 200px;
     height: 200px;
