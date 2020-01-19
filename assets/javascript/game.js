@@ -1,22 +1,60 @@
-$buttons()
+var score = 0; 
+var wins = 0; 
+var losses = 0;
+var gameState = "";
+
+//Random Number
+var lotteryValue = Math.floor(Math.random() * 120) + 19;
+
+//Random Crystal Value  need to double check
+var crystalValue1 = Math.floor(Math.random() * 12) + 1;
+var crystalValue2 = Math.floor(Math.random() * 12) + 1;
+var crystalValue3 = Math.floor(Math.random() * 12) + 1;
+var crystalValue4 = Math.floor(Math.random() * 12) + 1;
+$(document).ready(function() {
+
+$('currentNumber').val(lotteryValue);
+
+$("button").val(crystalValue1,crystalValue1, crystalValue1,crystalValue1);
+
+score = $('.scoreBox');
+
+        // in case my computer crashes on 1/19/19 go here next https://stackoverflow.com/questions/28103522/how-to-enable-and-disable-onclick-images
+    $(".btn1").click(function () {     
+    }); 
+    $(".btn2").click(function () {                 
+    }); 
+    $(".btn3").click(function () {                 
+    }); 
+    $(".btn4").click(function () {             
+    }); 
+});
+
+
+$(".btn1").click(function () {     
+    score += crystalValue1;
+}); 
+// update display can't find code, will look in homework for how i did it last time 1/19
 
 
 
 
-  var targetNumber = 53;  //this will be a random number 
 
-  $("#number-to-guess").text(targetNumber);
+// var targetNumber = 53;  //this will be a random number 
 
-  var counter = 0;
+//   $("#number-to-guess").text(targetNumber);
 
-  // Now for the hard part. Creating multiple crystals each with their own unique number value.
+//   var counter = 0;
 
-  // We begin by expanding our array to include four options.
-  var numberOptions = [10, 5, 3, 7];
+//   // Now for the hard part. Creating multiple crystals each with their own unique number value.
+
+//   // We begin by expanding our array to include four options.
+//   var numberOptions = [10, 5, 3, 7];
 
 
 
 
+  $buttons()
 
 
 
