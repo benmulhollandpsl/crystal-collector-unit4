@@ -31,13 +31,13 @@ function newGame(){
      //print score for game
     document.getElementById("randomNumberObject").innerHTML="Your Number Objective: " + randomNumberObject
 };
-
+//redRandom yellowRandom blueRandom shrekRandom are vars yes, but i need them to talk to the div class gemButtons how do i do that? -1/20
 
 
 
 
 newGame();
-//what happens when clicked
+//what happens when clicked errors currently here 1/20
 
 
 $(".red-gem").on("click",function () {
@@ -47,9 +47,11 @@ $(".red-gem").on("click",function () {
 $(".yellow-gem").click(function () {  
     currentNumber += yellowRandom; saveState()                
 }); 
+
 $(".blue-gem").click(function () {  
     currentNumber += blueRandom; saveState()                
 }); 
+
 $(".shrek-gem").click(function () {   
     currentNumber += shrekRandom; saveState()           
 }); 
@@ -94,8 +96,8 @@ console.log(randomNumberObject)
 // }
 
 
-// update display can't find code, will look in homework for how i did it last time 1/19
+// update display can't find code, will look in homework for how i did it last time 1/19 --found it sort of need to connect on click with displaying in win, lose, current number --1/20
 
 
 
-//need to add ways to see losses, wins, etc
+//need to add ways to see losses, wins, etc --1/20 update ongoing issue, will console log more and look for what I'm missing/typed wrong.
