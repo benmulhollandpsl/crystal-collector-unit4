@@ -1,6 +1,6 @@
 
- div {
-    background-image: url('/assets/images/difficulttolookat.png');
+body {
+    background: url("../images/difficulttolookat.png");
     background-size: auto;
 }
  
@@ -47,8 +47,7 @@
     list-style-position: inside;
   }
 
-body {
-    background: url("../images/difficulttolookat.png");
+
   background-repeat: repeat-y;
   background-attachment: fixed;
   

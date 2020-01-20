@@ -1,7 +1,7 @@
-var score = 0; 
-var wins = 0; 
-var losses = 0;
-var gameState = "";
+var currentNumber = 0; 
+var win = 0; 
+var lose = 0;
+var randomNumberObject = "";
 
 //Random Number
 var lotteryValue = Math.floor(Math.random() * 120) + 19;

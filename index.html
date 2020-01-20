@@ -67,9 +67,31 @@
     <!-- 8) repo linking, update portfolio page- does it link to it? -->
         
             <!-- ive decided to try to call these buttons and have their amounts add up in a result box -->
-        <div>
-            <img src="./assets/images/generic heart-1.png.png" alt="red heart" height="100" width="100" id="red heart">
 
+
+
+        <div clas="row">
+            <div class="col-lg-12">
+                <h2 id="randomNumberObject">Random Number:</h2>
+            </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <p id="currentNumber">Current Number:</p>
+            </div>
+            <div class="col-lg-3">
+                <p id="win">Wins: </p>
+                <p id="lose">Loses: </p>
+            </div>
+
+        </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <p id="gemButtons"></p>
+                        <img class="red-heart img" src="./assets/images/generic heart-1.png.png" alt="red heart" height="100" width="100" id="red heart">
+                    </p>
+                </div>    
+                <div class="col-lg-3">
+                    <p id="gemButtons"></p>
             <img src="./assets/images/is it egg or is it gem-1.png.png" alt="yellow egg" height="100" width="100" id="yellow egg">
 
             <img src="./assets/images/diamond icon-1.png.png" alt="blue diamond" height="100" width="100" id="gem icons">
@@ -84,12 +106,13 @@
 
         <!-- dom play here -->
 
-        <script>
+        <!-- <script>
         document.getElementById("red heart").onclick = function() {myFunction()};
         
         function myFunction() {
           document.getElementById("red heart").innerHTML = "maths will be here";
-        }
+        } -->
+        <!-- this wasn't the right way trying something different in js file with  -->
 
 
 
@@ -100,11 +123,10 @@
 
         // <!-- scripts down here -->
 
-    <script src='./assets/css/style.css'>
+    <script src ="./assets/css/style.css">
     </script>   
 
-    <script src ="./assets/javascript/game.js">
-    </script>
+   
 
 
 
@@ -112,6 +134,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    
+    <script src ="./assets/javascript/game.js"></script>
 
 
 </body>
