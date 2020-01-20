@@ -56,7 +56,7 @@ $(".shrek-gem").click(function () {
 
 function saveState(){
     if (randomNumberObject === currentNumber) {win++;
-        currentNumber += randomNumberObject; alert (Great Job, you did it! Try Again!);
+        currentNumber += randomNumberObject; alert ("Great Job, you did it! Try Again!");
         document.getElementById("win").innerHTML="Win: " + win;
         startGame();
 
@@ -73,7 +73,7 @@ console.log(randomNumberObject)
 
 
 
-
+}
 // //this way didn't work keeping untii further troubleshooting
 // (".red-gem").click(function () {
 //     currentNumber += redRandom; saveState()     
@@ -98,4 +98,4 @@ console.log(randomNumberObject)
 
 
 
-//need to add ways to see losses, wins, etc.
+//need to add ways to see losses, wins, etc

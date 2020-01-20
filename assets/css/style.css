@@ -48,6 +48,31 @@ body {
   }
 
 
+li:hover
+{
+    background-color: #c20736;
+}
+
+a
+{         
+    color: #ffffff;
+    padding: 2000px 32px 32px 32px;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #ffffff;
+}
+
+.background
+{
+    background-image: url("../images/difficulttolookat.png");
+    background-repeat: repeat;
+    background-position: auto;
+}
+
   
   
  img{
