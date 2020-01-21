@@ -19,7 +19,7 @@ function newGame(){
     var shrekRandom = Math.floor(Math.random() * 12) + 1;
 
 
-                // in case my computer crashes on 1/19/19 go here next https://stackoverflow.com/questions/28103522/how-to-enable-and-disable-onclick-images
+                //1/21 trying to create a var that stores totality of button clicks and shows on screen
             
 
 
@@ -30,13 +30,21 @@ function newGame(){
 
      //print score for game
     document.getElementById("randomNumberObject").innerHTML="Your Number Objective: " + randomNumberObject
+    document.getElementById("win").innerText = win(" ")
+    document.getElementById("lose").innerText = lose(" ")
+    document.getElementById("currentNumber").innerText = (" ")
+    function updateDisplay () {
+        
+       
+
+
 };
 //redRandom yellowRandom blueRandom shrekRandom are vars yes, but i need them to talk to the div class gemButtons how do i do that? -1/20
 
 
 
-
-newGame();
+}
+newGame();{
 //what happens when clicked errors currently here 1/20
 
 
@@ -69,10 +77,13 @@ function saveState(){
         startGame();
 
 }
+}
 
 console.log(randomNumberObject)
 
+.win
 
+.lose
 
 
 }
